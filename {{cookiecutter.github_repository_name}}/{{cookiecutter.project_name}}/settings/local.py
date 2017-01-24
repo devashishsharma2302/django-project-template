@@ -6,3 +6,9 @@ from common import *
 CELERY_ALWAYS_EAGER = True
 ########## END CELERY
 {% endif %}
+{% if cookiecutter.use_heroku == 'y' or cookiecutter.use_heroku == 'Y' %}
+########## HEROKU
+# Replace this with your heroku app url
+ALLOWED_HOSTS = ['*']
+########## END HEROKU
+{% endif %}

@@ -10,7 +10,7 @@ djangorestframework==3.5.3
 whitenoise==3.2.2
 dj-database-url==0.4.1
 dj-email-url==0.0.10
-{% if cookiecutter.db_type == 'postgres' %}
+{% if cookiecutter.db_type == 'postgres' or cookiecutter.use_heroku == 'y' or cookiecutter.use_heroku == 'Y' %}
 psycopg2==2.6.2
 {% endif %}
 {% if cookiecutter.db_type == 'mysql' %}

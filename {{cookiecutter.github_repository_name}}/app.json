@@ -1,0 +1,8 @@
+{
+  "name": "{{cookiecutter.github_repository_name}}",
+  "description": "",
+  "keywords": ["python", "django"],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "{{cookiecutter.project_name}}.settings.local"
+  }
+}

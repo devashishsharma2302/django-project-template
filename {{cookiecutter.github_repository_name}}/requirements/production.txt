@@ -1,3 +1,4 @@
+-r base.txt
 gunicorn==19.6.0
 {% if cookiecutter.use_newrelic == 'y' %}
 newrelic==2.78.0.57

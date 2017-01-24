@@ -1,4 +1,8 @@
 # {{cookiecutter.github_repository_name}}
+{% if cookiecutter.use_heroku == 'y' or cookiecutter.use_heroku == 'Y' %}
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+{% endif %}
+
 # Introduction
 
 Write about your project in this area.
